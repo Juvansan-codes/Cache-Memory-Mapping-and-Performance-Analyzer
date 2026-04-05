@@ -1,0 +1,55 @@
+export const tokens = {
+  colors: {
+    background: '#0A0A0F',
+    surface: '#13131A',
+    surfaceHigh: '#1C1C27',
+    border: 'rgba(255,255,255,0.06)',
+    accent: '#6366F1',
+    accentSoft: '#818CF8',
+    hit: '#34D399',
+    miss: '#F87171',
+    evict: '#FBBF24',
+    empty: '#374151',
+    text: '#F1F5F9',
+    textMuted: '#64748B',
+    textCode: '#A5B4FC',
+  },
+  typography: {
+    fontUI: "'Inter', system-ui, sans-serif",
+    fontMono: "'JetBrains Mono', monospace",
+  },
+  spacing: {
+    4: '4px',
+    8: '8px',
+    12: '12px',
+    16: '16px',
+    24: '24px',
+    32: '32px',
+    48: '48px',
+    64: '64px',
+  },
+  borderRadius: {
+    sm: '6px',
+    md: '10px',
+    lg: '16px',
+    xl: '24px',
+  },
+  shadows: {
+    card: '0 0 0 1px rgba(255,255,255,0.06), 0 4px 24px rgba(0,0,0,0.4)',
+    glowHit: '0 0 20px rgba(52,211,153,0.15)',
+    glowMiss: '0 0 20px rgba(248,113,113,0.15)',
+    glowAccent: '0 0 30px rgba(99,102,241,0.2)',
+  },
+  motion: {
+    duration: {
+      fast: 0.15,
+      normal: 0.3,
+      slow: 0.6,
+    },
+    easing: {
+      springCell: { type: 'spring', stiffness: 300, damping: 30 },
+      easeOutPanel: { type: 'tween', ease: 'easeOut' },
+      linearProgress: { type: 'tween', ease: 'linear' },
+    },
+  },
+} as const;
